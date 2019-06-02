@@ -55,6 +55,13 @@ public class GreetingsTest {
         String result = greetings.greet(name);
         assertEquals("Adam i Iza, witajcie! WITAJ ROBERT!", result);
     }
+    @Test
+    public void testShouldPrintMassageWhenNameContainsNumber(){
+        Greetings greetings = new Greetings();
+        String name = "Adam1";
+        String result = greetings.greet(name);
+        assertEquals("Z liczbami się nie witam.", result);
+    }
 
 
 }
