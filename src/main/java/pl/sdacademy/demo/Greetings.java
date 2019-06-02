@@ -19,5 +19,6 @@ public class Greetings {
             }
         }
         return "Witaj " + name;
+
     }
 }
